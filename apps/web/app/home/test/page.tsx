@@ -1,14 +1,14 @@
 import loadDynamic from 'next/dynamic';
 import { PlusCircleIcon } from '@heroicons/react/24/outline';
 
-import AppHeader from '../(user)/_components/AppHeader';
+import AppHeader from '../user/_components/AppHeader';
 import { withI18n } from '~/i18n/with-i18n';
 import Spinner from '@kit/ui/Spinner';
 import Trans from '@kit/ui/Trans';
 import Button from '@kit/ui/Button';
 import { PageBody } from '@kit/ui/Page';
 
-const DashboardDemo = loadDynamic(() => import('../(user)/_components/newdashboard'), {
+const DashboardDemo = loadDynamic(() => import('../user/_components/newdashboard'), {
   ssr: false,
   loading: () => (
     <div
